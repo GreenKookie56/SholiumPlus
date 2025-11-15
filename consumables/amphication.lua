@@ -17,7 +17,7 @@ SMODS.Consumable {
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)
         local used_card = copier or card
-        if (#G.hand.highlighted = 1) then
+        if (#G.hand.highlighted == 1) then
             G.E_MANAGER:add_event(Event({
                 trigger = 'after',
                 delay = 0.4,
