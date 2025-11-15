@@ -2,7 +2,7 @@ SMODS.Joker{ --Boss Farming Guide
     key = "bossfarmingguide",
     config = {
         extra = {
-            eor = 2,
+            eor = 0,
             thenumerator = 1,
             money÷10 = 0
         }
