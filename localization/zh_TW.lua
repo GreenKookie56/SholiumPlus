@@ -4,7 +4,7 @@ return {
 			c_sholium_sholstar = {
 				name = "S O L",
 				text = {
-					"隨機升級{C:attention}3{}個牌型{C:attention}3{}個等級",
+					"隨機升級{C:attention}3{}個牌型{C:attention}1{}個等級",
 				},
 			},
                },
@@ -12,7 +12,7 @@ return {
 			c_sholium_amphication = {
 				name = "餛飩之劍",
 				text = {
-					"賦予至多{C:attention}2{}張牌隨機{C:enhanced}強化{}，{C:attention}封蠟章{}及{C:dark_edition}版本{}",
+					"賦予至多{C:attention}1{}張牌隨機{C:enhanced}強化{}及{C:attention}封蠟章{}",
 				},
 			},
                },
@@ -21,7 +21,6 @@ return {
 				name = "Shol理元素",
 				text = {
 					"賦予{C:dark_edition}黑色牌堆{}效果",
-					"並召喚{C:dark_edition,E:1}超激稀有{}級別的小丑",
 				},
 			},
                },
@@ -157,7 +156,7 @@ return {
 			j_sholium_ezili = {
 				name = "巫毒法師",
 				text = {
-					"若為{C:attention}大盲注{}或{C:attention}Boss盲注{}，",
+					"若為{C:attention}Boss盲注{}，",
 					"{C:purple}平衡{}{C:blue}籌碼{}和{C:red}倍率{}",
 				},
 			},
