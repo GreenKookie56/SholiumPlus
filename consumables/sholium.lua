@@ -10,9 +10,7 @@ SMODS.Consumable {
         name = 'Sholium',
         text = {
         [1] = 'Apply {C:dark_edition}Black Deck{}',
-        [2] = 'to your run',
-        [3] = 'and spawn a {C:attention}Joker{} with',
-        [4] = '{C:dark_edition,E:1}Peculiar{} rarity'
+        [2] = 'to your run'
     }
     },
     cost = 4,
@@ -46,19 +44,6 @@ SMODS.Consumable {
                 end
             }))
             delay(0.6)
-            G.E_MANAGER:add_event(Event({
-                  trigger = 'after',
-                  delay = 0.4,
-                  func = function()
-                      play_sound('timpani')
-                      local new_joker = SMODS.add_card({ set = 'Joker', rarity = 'sholium_peculiar' })
-                      if new_joker then
-                      end
-                      used_card:juice_up(0.3, 0.5)
-                      return true
-                  end
-              }))
-              delay(0.6)
     end,
     can_use = function(self, card)
         return true
