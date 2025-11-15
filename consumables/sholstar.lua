@@ -9,7 +9,6 @@ SMODS.Consumable {
         name = 'S O L',
         text = {
         [1] = 'Upgrade {C:attention}3{} {C:purple}Random{} {C:attention}Poker Hands{}',
-        [2] = 'by {C:attention}3{} levels'
     }
     },
     cost = 3,
@@ -61,7 +60,7 @@ SMODS.Consumable {
                 table.insert(hand_pool, hand_key)
             end
             local random_hand = pseudorandom_element(hand_pool, 'random_hand_levelup')
-            level_up_hand(card, random_hand, true, 3)
+            level_up_hand(card, random_hand, true, 1)
             
             update_hand_text({sound = 'button', volume = 0.7, pitch = 1.1, delay = 0}, 
                 {handname=localize(random_hand, 'poker_hands'), 
@@ -110,7 +109,7 @@ SMODS.Consumable {
                 table.insert(hand_pool, hand_key)
             end
             local random_hand = pseudorandom_element(hand_pool, 'random_hand_levelup')
-            level_up_hand(card, random_hand, true, 3)
+            level_up_hand(card, random_hand, true, 1)
             
             update_hand_text({sound = 'button', volume = 0.7, pitch = 1.1, delay = 0}, 
                 {handname=localize(random_hand, 'poker_hands'), 
@@ -159,7 +158,7 @@ SMODS.Consumable {
                 table.insert(hand_pool, hand_key)
             end
             local random_hand = pseudorandom_element(hand_pool, 'random_hand_levelup')
-            level_up_hand(card, random_hand, true, 3)
+            level_up_hand(card, random_hand, true, 1)
             
             update_hand_text({sound = 'button', volume = 0.7, pitch = 1.1, delay = 0}, 
                 {handname=localize(random_hand, 'poker_hands'), 
