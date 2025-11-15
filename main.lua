@@ -58,17 +58,27 @@ end
 load_rarities_file()
 load_jokers_folder()
 load_consumables_folder()
-SMODS.ObjectType({
-    key = "sholium_food",
-    cards = {
-        ["j_gros_michel"] = true,
-        ["j_egg"] = true,
-        ["j_ice_cream"] = true,
-        ["j_cavendish"] = true,
-        ["j_turtle_bean"] = true,
-        ["j_diet_cola"] = true,
-        ["j_popcorn"] = true,
-        ["j_ramen"] = true,
-        ["j_selzer"] = true
-    },
-})
+
+local gba = get_blind_amount
+function sigFig(num,figures)
+    local x=figures - math.ceil(math.log10(math.abs(num)))
+    return(math.floor(num*10^x+0.5)/10^x)
+end
+function get_blind_amount(ante)
+	local amount = 1
+	if ante - math.floor(ante) ~= 0 then
+		local a = gba(math.floor(ante)) ^ (ante - math.floor(ante))
+		local b = gba(math.ceil(ante)) ^ (1 - (ante - math.floor(ante)))
+		amount = a * b
+	else
+		amount = gba(ante)
+	end
+		if ante <= 8 and ante >= 2 then 
+			amount = sigFig(amount^2^((ante-1)/7),2)
+		elseif ante >= 8 then
+			amount = amount*2
+		end
+	end
+
+	return amount
+end
