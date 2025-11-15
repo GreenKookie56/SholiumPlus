@@ -55,7 +55,6 @@ local function load_rarities_file()
     assert(SMODS.load_file("rarities.lua"))()
 end
 
-load_rarities_file()
 load_jokers_folder()
 load_consumables_folder()
 
