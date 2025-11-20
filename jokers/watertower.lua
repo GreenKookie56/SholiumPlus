@@ -81,7 +81,7 @@ SMODS.Joker{ --Water Tower
                 }
                 end
             end
-         elseif to_big((card.ability.extra.mult or 0)) <= to_big(60)
+         elseif to_big((card.ability.extra.mult or 0)) <= to_big(60) then
             return {
                 mult = card.ability.extra.mult
             }
