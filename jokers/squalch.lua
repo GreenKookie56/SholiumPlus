@@ -2,8 +2,8 @@ SMODS.Joker{ --:squalch:
     key = "squalch",
     config = {
         extra = {
-            chips = 1,
-            squarechips = 1
+            chips = 2,
+            squarechips = 4
         }
     },
     loc_txt = {
