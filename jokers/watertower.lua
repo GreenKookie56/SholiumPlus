@@ -53,15 +53,14 @@ SMODS.Joker{ --Water Tower
                         return false
                     end
                 end
-                return true
-            end)() and to_big((card.ability.extra.mult or 0)) <= to_big(60)) then
                 return {
                     func = function()
                         card.ability.extra.mult = (card.ability.extra.mult) + card.ability.extra.multmod
                         return true
                     end
                 }
-            elseif to_big((card.ability.extra.mult or 0)) > to_big(60) then
+        if context.cardarea == G.jokers and context.joker_main then
+           if to_big((card.ability.extra.mult or 0)) > to_big(60) then
                 return {
                     func = function()
                         local target_joker = card
@@ -79,9 +78,9 @@ SMODS.Joker{ --Water Tower
                         return true
                     end
                 }
+                end
             end
-        end
-        if context.cardarea == G.jokers and context.joker_main then
+         elseif to_big((card.ability.extra.mult or 0)) <= to_big(60)
             return {
                 mult = card.ability.extra.mult
             }
