@@ -201,6 +201,14 @@ return {
 					"購買任意一張牌時獲得{C:gold}$2{}",
 				},
 			},
+			j_sholmod_normaldistribution = {
+				name = "常態分佈",
+				text = {
+					"每張打出的{C:attention}7{}",
+					"給予{X:red,C:white}X#1#{}倍率",
+					"{C:inactive,s:0.8}1張7倍率X2，2張X3，以此類推{}",
+				},
+			},	
 			j_sholmod_orca = {
 				name = "逆戟鯨(v36.0-36.1)",
 				text = {
