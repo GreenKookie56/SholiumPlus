@@ -14,7 +14,7 @@ SMODS.Joker{ --Water Tower
             [1] = 'This Joker gains {C:red}+#2#{} Mult if',
             [2] = 'played hand is your',
             [3] = '{C:attention}most played{} Poker Hand',
-            [4] = '{C:red}self-destructs{} when Mult exceeds {C:attention}60{}'
+            [4] = '{C:red}self-destructs{} when Mult exceeds {C:attention}60{}',
             [5] = '{C:inactive}(Currently{} {C:red}+#1#{} {C:inactive}Mult){}'
         },
         ['unlock'] = {
