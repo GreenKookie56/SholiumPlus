@@ -3,7 +3,7 @@ SMODS.Joker{ --Fungus
     config = {
         extra = {
             mult = 0.5,
-            hands = 5,
+            hands = 4,
             round = 0
         }
     },
@@ -26,7 +26,7 @@ SMODS.Joker{ --Fungus
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 4,
+    cost = 6,
     rarity = 2,
     blueprint_compat = true,
     demicoloncompat = true,
