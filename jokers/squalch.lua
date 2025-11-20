@@ -42,7 +42,7 @@ SMODS.Joker{ --:squalch:
     end,
 
     calculate = function(self, card, context)
-        if context.before and context.cardarea == G.jokers  then
+        if context.before and context.cardarea == G.jokers and not context.blueprint then
             if (#context.scoring_hand == 4 and G.GAME.current_round.hands_played == 0) then
                 local squarechips_value = card.ability.extra.squarechips
                 return {
