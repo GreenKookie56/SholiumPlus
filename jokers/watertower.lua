@@ -59,6 +59,8 @@ SMODS.Joker{ --Water Tower
                         return true
                     end
                 }
+            end
+        end
         if context.cardarea == G.jokers and context.joker_main then
            if to_big((card.ability.extra.mult or 0)) > to_big(60) then
                 return {
